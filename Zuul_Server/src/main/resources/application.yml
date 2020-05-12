@@ -1,0 +1,44 @@
+server:
+  port: 8881
+spring:
+  application:
+    name: microsrv_zuul_gateway
+    
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8801/eureka/
+zuul:
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  ignoredServices: '*'
+  prefix: /api
+  routes:
+    auth-service:
+      path: /auth/**
+      sensitiveHeaders:
+      serviceId: idsrv-server
+    order-service:
+      path: /user/**
+      sensitiveHeaders:
+      serviceId: service-user 
+  add-proxy-headers: true
+  
+#security:
+#  oauth2:
+#    client:
+#      access-token-uri: http://localhost:8080/oauth/token
+#      user-authorization-uri: http://localhost:8080/oauth/authorize
+#      client-id: client_test
+#      client-secret: secret_test
+#    resource:
+#      user-info-uri: http://localhost:8080/api/v1/users/principal
+#      prefer-token-info: false  

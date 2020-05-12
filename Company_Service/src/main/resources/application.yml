@@ -1,0 +1,15 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8801/eureka/
+server:
+  port: 8888
+spring:
+  application:
+    name: service-company
+  security:
+    basic:
+      enabled: true
+    user:
+      name: root
+      password: sammiliu    
