@@ -32,7 +32,7 @@ public class JwtUsernamePasswordAuthenticationFilter extends AbstractAuthenticat
     private final ObjectMapper mapper;
 
     public JwtUsernamePasswordAuthenticationFilter(JwtAuthenticationConfig config, AuthenticationManager authManager) {
-        super((RequestMatcher) new AntPathRequestMatcher(((Object) config).getUrl(), "POST"));
+        super((RequestMatcher) new AntPathRequestMatcher(config.getUrl(), "POST"));
         setAuthenticationManager(authManager);
         this.config = config;
         this.mapper = new ObjectMapper();
@@ -67,5 +67,13 @@ public class JwtUsernamePasswordAuthenticationFilter extends AbstractAuthenticat
     private static class User {
         private String username;
         private String password;
+		public Object getUsername() {
+			// TODO Auto-generated method stub
+			return "admin";
+		}
+		public Object getPassword() {
+			// TODO Auto-generated method stub
+			return "1111";
+		}
     }
 }

@@ -1,4 +1,4 @@
-package com.example.startsstock.config;
+package com.example.startadmin.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

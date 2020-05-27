@@ -1,11 +1,11 @@
-package com.example.startsstock.impl;
+package com.example.startadmin.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.startsstock.Service.Admin;
-import com.example.startsstock.entity.AdminVO;
-import com.example.startsstock.repository.AdminVORepository;
+import com.example.startadmin.Service.Admin;
+import com.example.startadmin.entity.AdminVO;
+import com.example.startadmin.repository.AdminVORepository;
 
 @Service
 public class AdminImpl implements Admin {

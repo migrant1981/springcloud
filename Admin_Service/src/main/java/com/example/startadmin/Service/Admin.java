@@ -1,6 +1,6 @@
-package com.example.startsstock.Service;
+package com.example.startadmin.Service;
 
-import com.example.startsstock.entity.AdminVO;
+import com.example.startadmin.entity.AdminVO;
 
 public interface Admin {
 	void save(AdminVO c);

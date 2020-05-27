@@ -22,4 +22,29 @@ public class JwtAuthenticationConfig {
 
     @Value("${zuul_server.security.jwt.secret}")
     private String secret;
+
+	public String getHeader() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getPrefix() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getSecret() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getUrl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public long getExpiration() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

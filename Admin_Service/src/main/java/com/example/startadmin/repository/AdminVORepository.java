@@ -1,8 +1,9 @@
-package com.example.startsstock.repository;
-import com.example.startsstock.entity.AdminVO;
+package com.example.startadmin.repository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
+
+import com.example.startadmin.entity.AdminVO;
 
 public interface AdminVORepository extends CrudRepository<AdminVO, Long> {
     @Query("select u from AdminVO u where u.companyname=:companyname")

@@ -9,6 +9,7 @@ server:
 spring:
   application:
     name: service-admin
+    
 #  security:
 #    basic:
 #      enabled: true

@@ -1,4 +1,4 @@
-package com.example.startsstock.Controller;
+package com.example.startadmin.Controller;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -23,11 +23,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.startsstock.Service.Admin;
-import com.example.startsstock.Service.IStock_priceService;
-import com.example.startsstock.entity.AdminVO;
-import com.example.startsstock.entity.ImportSummary;
-import com.example.startsstock.entity.Stock_price;
+import com.example.startadmin.Service.Admin;
+import com.example.startadmin.Service.IStock_priceService;
+import com.example.startadmin.entity.AdminVO;
+import com.example.startadmin.entity.ImportSummary;
+import com.example.startadmin.entity.Stock_price;
 
 import lombok.extern.slf4j.Slf4j;
 

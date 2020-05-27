@@ -60,6 +60,7 @@
 	</dependencyManagement>
 
 	<build>
+		<defaultGoal>compile</defaultGoal>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -75,8 +76,9 @@
 			<url>https://repo.spring.io/milestone</url>
 		</repository>
 	</repositories>
-<modules><module>User_Service</module>
-	<module>Company_Service</module>
-	<module>Admin_Service</module>
-</modules>
+	<modules>
+		<module>User_Service</module>
+		<module>Company_Service</module>
+		<module>Admin_Service</module>
+	</modules>
 </project>

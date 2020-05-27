@@ -22,14 +22,22 @@ zuul:
   ignoredServices: '*'
   prefix: /api
   routes:
-    auth-service:
-      path: /auth/**
-      sensitiveHeaders:
-      serviceId: idsrv-server
-    order-service:
+#    auth-service:
+#      path: /user/**
+#      sensitiveHeaders:
+#      serviceId: idsrv-server
+    user-service:
       path: /user/**
       sensitiveHeaders:
-      serviceId: service-user 
+      serviceId: service-user
+    company-service:
+      path: /company/**
+      sensitiveHeaders:
+      serviceId: service-company
+    admin-service:
+      path: /admin/**
+      sensitiveHeaders:
+      serviceId: service-admin
   add-proxy-headers: true
   
 #security:

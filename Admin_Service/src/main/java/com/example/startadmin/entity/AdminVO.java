@@ -1,4 +1,4 @@
-package com.example.startsstock.entity;
+package com.example.startadmin.entity;
 
 
 import javax.persistence.Column;
